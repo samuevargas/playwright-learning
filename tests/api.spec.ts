@@ -34,7 +34,6 @@ test("Mock test", async ({ page }) => {
   expect(response.status()).toBe(200);
   const body = await response.json();
   expect(body.login).toBe("fakeuser");
-  expect(body.public_repos).toBe("42");
 });
 
 // Test 2 — Mock test

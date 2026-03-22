@@ -30,8 +30,8 @@ jobs:
       - name: Run tests
         run: npx playwright test
         env:
-          GITHUB_USER: ${{ secrets.GITHUB_USER }}
-          GITHUB_PASS: ${{ secrets.GITHUB_PASS }}
+          GITHUB_USER: ${{ secrets.USER }}
+          GITHUB_PASS: ${{ secrets.PASS }}
 
       - name: Upload test report
         uses: actions/upload-artifact@v4
