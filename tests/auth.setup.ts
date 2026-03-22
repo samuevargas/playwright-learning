@@ -9,6 +9,4 @@ setup("authenticate", async ({ page }) => {
   await page.getByRole("button", { name: "Sign in" }).click();
   await page.waitForURL("https://github.com/");
 
-  // Save auth state to file
-  await page.context().storageState({ path: authFile });
 });
