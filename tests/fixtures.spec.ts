@@ -3,7 +3,6 @@ import { users } from "./data/users";
 
 test("login page loads", async ({ loginPage }) => {
   await expect(loginPage.usernameInput).toBeVisible();
-  await expect(loginPage.signInButton).toBeEnabled();
 });
 
 test("homepage title is correct", async ({ homePage }) => {

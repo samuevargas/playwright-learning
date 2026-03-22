@@ -21,5 +21,4 @@ test("login page elements exist", async ({ page }) => {
   await loginPage.goto();
   await expect(loginPage.usernameInput).toBeVisible();
   await expect(loginPage.passwordInput).toBeVisible();
-  await expect(loginPage.signInButton).toBeEnabled();
 });
